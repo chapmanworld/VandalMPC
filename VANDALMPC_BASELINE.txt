@@ -1,0 +1,16 @@
+VandalMPC upstream baseline
+
+MPC (GNU MPC complex arithmetic library):
+  Version: 1.4.1
+  Upstream repository: https://gitlab.inria.fr/mpc/mpc.git
+  Upstream tag: 1.4.1
+
+Reason:
+  MPC is a build-time dependency of GDB (via VandalBinUtils), built against
+  GMP and MPFR. This baseline matches the version pinned for the VandalSDK
+  toolchain build.
+
+This repository was forked directly from the upstream MPC git repository
+at the tag above; full upstream history is preserved, and the upstream
+remote is retained locally as `mpc-upstream` so later releases can be
+pulled with a normal `git fetch mpc-upstream <tag>`.
